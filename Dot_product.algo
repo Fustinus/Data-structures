@@ -24,12 +24,11 @@ BEGIN
     FOR i IN vectors STEP 1 DO
         FOR j FROM i +1 TO vectors STEP 2  DO
             IF (dot_product(vectors[i], vectors[j]) == 0) THEN
-            ADD i and j TO orthogonal_pairs
+                ADD i and j TO orthogonal_pairs
             END_IF
         END_FOR
     END_FOR
     // list: A list of tuples, each containing the indices of the orthogonal vector pairs.
-
 END
 
 
@@ -42,7 +41,7 @@ BEGIN
      FOR i IN vectors STEP 1 DO
         FOR j FROM i +1 TO vectors STEP 2  DO
             IF (dot_product(vectors[i], vectors[j]) == 0) THEN
-            ADD i and j TO orthogonal_pairs
+                ADD i and j TO orthogonal_pairs
             END_IF
         END_FOR
     END_FOR
